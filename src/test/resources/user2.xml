@@ -1,0 +1,44 @@
+<user key="09A2CCCC4E3ED46B4C6A4D03A71902E0F58F5B83" deleted="false" built-in="false" qualified-name="default\tho"
+      group-key="3047B7890B7F51328A454EC7152E5BE8B371DA70">
+  <userstore>default</userstore>
+  <name>tho</name>
+  <display-name>Bob Smith</display-name>
+  <last-modified>2012-08-11T10:34:21.559Z</last-modified>
+  <email>bob@example.com</email>
+  <memberships count="2">
+    <group key="DF494674CFEB2F112DDDF63E9867805C5A973DF2" built-in="true" deleted="false" type="0" type-name="Enterprise Administrators"
+           qualified-name="Enterprise Administrators">
+      <name>Enterprise Administrators</name>
+      <display-name>Enterprise Administrators (built-in)</display-name>
+      <restricted>true</restricted>
+    </group>
+    <group key="F2C93E8E154AD31D5684334FFD1B54B59033B644" built-in="true" deleted="false" type="5" type-name="Administrators"
+           qualified-name="Administrators">
+      <name>Administrators</name>
+      <display-name>Administrators (built-in)</display-name>
+      <restricted>true</restricted>
+    </group>
+  </memberships>
+  <first-name>Bob</first-name>
+  <last-name>Smith</last-name>
+  <middle-name>Jim</middle-name>
+  <nick-name>Doc</nick-name>
+  <country>US</country>
+  <description/>
+  <initials>B.J.S.</initials>
+  <global-position/>
+  <html-email>false</html-email>
+  <locale>en_US</locale>
+  <personal-id/>
+  <member-id/>
+  <organization/>
+  <phone/>
+  <fax/>
+  <mobile/>
+  <prefix/>
+  <suffix>P.A.</suffix>
+  <title/>
+  <time-zone>America/Los_Angeles</time-zone>
+  <home-page/>
+  <gender>male</gender>
+</user>

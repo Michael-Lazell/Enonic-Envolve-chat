@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <bean class="com.enonic.cms.api.plugin.ext.FunctionLibrary">
+    <property name="name" value="envolveChat"/>
+    <property name="displayName" value="Envolve Chat"/>
+    <property name="target" ref="envolvePluginFunctLib"/>
+  </bean>
+
+  <bean name="envolvePluginFunctLib" class="com.enonic.envolve.EnvolvePlugin">
+  </bean>
+
+</beans>

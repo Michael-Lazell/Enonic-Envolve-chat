@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<user key="9E17AB86497177A4B8E27EE9E20610E4AF1860E5" deleted="false" built-in="false" qualified-name="default\mla"
+      group-key="F641773C631FB528D0469BC7959213AB5EE665BD">
+  <userstore>default</userstore>
+  <name>mla</name>
+  <display-name>Michael Lazell</display-name>
+  <last-modified>2013-10-04T10:26:36.858Z</last-modified>
+  <email>mla@enonic.com</email>
+  <memberships count="3">
+    <group key="DF494674CFEB2F112DDDF63E9867805C5A973DF2" built-in="true" deleted="false" type="0" type-name="Enterprise Administrators"
+           qualified-name="Enterprise Administrators">
+      <name>Enterprise Administrators</name>
+      <display-name>Enterprise Administrators (built-in)</display-name>
+      <restricted>true</restricted>
+    </group>
+    <group key="4D401F7843F8C3C5BEB693B50626027E77BE0C35" built-in="false" deleted="false" type="1" type-name="userStoreGroup"
+           qualified-name="default\Chat admin">
+      <userstore>default</userstore>
+      <name>Chat admin</name>
+      <display-name>Chat admin</display-name>
+      <restricted>true</restricted>
+    </group>
+    <group key="4315835153EE450009BE3AB03FFE7DCEE7DEDB49" built-in="false" deleted="false" type="1" type-name="userStoreGroup"
+           qualified-name="default\Customers">
+      <userstore>default</userstore>
+      <name>Customers</name>
+      <display-name>Customers</display-name>
+      <restricted>false</restricted>
+    </group>
+  </memberships>
+  <addresses>
+    <address>
+      <country/>
+      <iso-country>NO</iso-country>
+      <iso-region>03</iso-region>
+      <label/>
+      <postal-code>0283</postal-code>
+      <postal-address>Oslo</postal-address>
+      <region/>
+      <street>Lilleakerveien 11</street>
+    </address>
+    <address>
+      <country/>
+      <iso-country>US</iso-country>
+      <iso-region>03</iso-region>
+      <label/>
+      <postal-code>95405</postal-code>
+      <postal-address>Santa Rosa</postal-address>
+      <region/>
+      <street>4346 Cordelia Dr.</street>
+    </address>
+  </addresses>
+  <first-name>Michael</first-name>
+  <last-name>Lazell</last-name>
+  <description/>
+  <personal-id/>
+  <member-id/>
+  <organization/>
+  <phone/>
+  <mobile>45776850</mobile>
+  <prefix/>
+  <suffix/>
+  <!--<title>Webmaster</title>-->
+  <home-page/>
+  <photo exists="true"/>
+</user>

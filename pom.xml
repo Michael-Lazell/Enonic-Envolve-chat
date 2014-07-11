@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>EnvolvePlugin</groupId>
+  <artifactId>EnvolvePlugin</artifactId>
+  <version>1.0</version>
+  <packaging>cms-plugin</packaging>
+  <description>Create JavaScript for Envolve chat plugin</description>
+
+  <inceptionYear>2013</inceptionYear>
+
+  <organization>
+    <name>Enonic</name>
+    <url>http://www.enonic.com</url>
+  </organization>
+
+  <prerequisites>
+    <maven>2.3.2</maven>
+  </prerequisites>
+
+  <repositories>
+    <repository>
+      <id>enonic.repo</id>
+      <url>http://repo.enonic.com/maven</url>
+    </repository>
+  </repositories>
+
+  <pluginRepositories>
+    <pluginRepository>
+      <id>enonic</id>
+      <url>http://repo.enonic.com/maven</url>
+    </pluginRepository>
+  </pluginRepositories>
+
+  <properties>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <cms.version>4.7.6</cms.version>
+  </properties>
+
+  <build>
+
+    <resources>
+      <resource>
+        <directory>${project.build.directory}/includes</directory>
+        <includes>
+          <include>**./*.jar</include>
+        </includes>
+      </resource>
+      <resource>
+        <targetPath>META-INF/spring</targetPath>
+        <filtering>false</filtering>
+        <directory>${basedir}/src/main/resources/META-INF/spring</directory>
+        <includes>
+          <include>context.xml</include>
+        </includes>
+      </resource>
+    </resources>
+
+    <plugins>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>2.3.1</version>
+
+        <configuration>
+          <archive>
+            <manifest>
+              <mainClass>com.enonic.envolve.EnvolvePlugin</mainClass>
+            </manifest>
+            <addMavenDescriptor>false</addMavenDescriptor>
+          </archive>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>com.enonic.cms.tools</groupId>
+        <artifactId>maven-cms-plugin</artifactId>
+        <version>1.0.1</version>
+        <extensions>true</extensions>
+      </plugin>
+
+    </plugins>
+  </build>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.enonic.cms</groupId>
+      <artifactId>cms-api</artifactId>
+      <version>4.7.5</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.8.2</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+</project>
+
