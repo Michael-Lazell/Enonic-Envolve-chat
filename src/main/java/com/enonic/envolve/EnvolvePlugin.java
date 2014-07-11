@@ -41,6 +41,16 @@ public class EnvolvePlugin
     private Element envolve = new Element( "envolve" );
     private Logger log = Logger.getLogger( EnvolvePlugin.class.getName() );
 
+    /**
+     * Called by a portlet or page template datasource. This returns a JDOM Document with the javascript required to
+     * sign in the logged in user to chat or set up a guest chat user when not logged in.
+     * @param apiKey This is the Envolve chat API key that you get from your Envolve account page.
+     * @param baseImageUrl The base URL of your website admin console. This URL is used to retrieve the users image.
+     * @param chatAdminGroupName The name of a group in the the Enonic userstore that is used to designate chat admins.
+     * @param html Any custom HTML that you want to see in the user field when hovering over a chat user's name.
+     * @return The JDOM Document with JavaScript for SSO if logged in user, or creating a guest user if not logged in.
+     * @throws Exception
+     */
     public Document envolveLogin( String apiKey, String baseImageUrl, String chatAdminGroupName, String html )
         throws Exception
     {
@@ -82,9 +92,7 @@ public class EnvolvePlugin
         String lastName = getLastName( user );
         String fullImageUrl = getImageUrl( user, baseImageUrl );
         boolean chatAdmin = isChatAdmin( user, chatAdminGroupName );
-        //TODO: Do something with the html.
         String htmlInput = getHtml( user, html, fullImageUrl );
-
 
         //log.info( "firstName is: " + firstName + " -- lastName is : " + lastName + " -- fullImageUrl is: " +
         //    fullImageUrl + " -- chatAdmin is: " + chatAdmin + " -- html is: " + html);
