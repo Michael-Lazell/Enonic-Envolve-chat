@@ -7,7 +7,7 @@
 
   <groupId>EnvolvePlugin</groupId>
   <artifactId>EnvolvePlugin</artifactId>
-  <version>1.0</version>
+  <version>1.1</version>
   <packaging>cms-plugin</packaging>
   <description>Create JavaScript for Envolve chat plugin</description>
 
@@ -27,6 +27,11 @@
       <id>enonic.repo</id>
       <url>http://repo.enonic.com/maven</url>
     </repository>
+      <repository>
+          <id>project.local</id>
+          <name>project</name>
+          <url>file:${project.basedir}/repo</url>
+      </repository>
   </repositories>
 
   <pluginRepositories>
@@ -101,6 +106,11 @@
       <version>4.8.2</version>
       <scope>test</scope>
     </dependency>
+      <dependency>
+          <groupId>com.envolve.api</groupId>
+          <artifactId>envolve</artifactId>
+          <version>0.3</version>
+      </dependency>
   </dependencies>
 
 </project>
